@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+    CMF
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </header>
+    <div>
+      <button id="scroll-to-top" onclick="scrollToTop()" class="rounded-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+          />
+        </svg>
+      </button>
+
+      <div
+        id="home"
+        class="d-flex align-items-center justify-content-center vh-90 flex-column bd-highlight mb-3"
+      >
+        <h1 class=" p-2 bd-highlight">CMF Phone 1 (Model A015)</h1>
+        <img
+          class="hero-img"
+          src="/assets/hero.png"
+          alt="cmf"
+        />
+        
+        <h2 class="p-2 bd-highlight">A Nothing Product</h2>
+      </div>
+
+      <div id="about" class="container mt-5">
+        <h1 class="text-center">CMF Phone 1 (Model A015) - Specifications</h1>
+
+        <h2>General</h2>
+        <table>
+          <tr>
+            <th>In The Box</th>
+            <td>
+              Handset, C-C Charging Cable, Sim Tray Ejector, Safety Info,
+              Warranty Card
+            </td>
+          </tr>
+          <tr>
+            <th>Model Name</th>
+            <td>Phone 1</td>
+          </tr>
+          <tr>
+            <th>Color</th>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <th>SIM Type</th>
+            <td>Dual SIM (Hybrid Slot)</td>
+          </tr>
+          <tr>
+            <th>Touchscreen</th>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th>OTG Compatible</th>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th>Quick Charging</th>
+            <td>Yes</td>
+          </tr>
+        </table>
+
+        <h2>Display Features</h2>
+        <table>
+          <tr>
+            <th>Display Size</th>
+            <td>6.67 inches (16.94 cm)</td>
+          </tr>
+          <tr>
+            <th>Resolution</th>
+            <td>2400 x 1080 pixels (Full HD+)</td>
+          </tr>
+          <tr>
+            <th>Refresh Rate</th>
+            <td>120Hz</td>
+          </tr>
+          <tr>
+            <th>Display Type</th>
+            <td>AMOLED Rigid LTPS</td>
+          </tr>
+          <tr>
+            <th>GPU</th>
+            <td>ARM Mali-G615 MC2</td>
+          </tr>
+          <tr>
+            <th>HD Game Support</th>
+            <td>Yes</td>
+          </tr>
+        </table>
+
+        <h2>OS & Processor</h2>
+        <table>
+          <tr>
+            <th>Operating System</th>
+            <td>Android 14 (Nothing OS 2.6)</td>
+          </tr>
+          <tr>
+            <th>Processor</th>
+            <td>
+              MediaTek Dimensity 7300 5G (Octa-core)<br />Primary: 2.5GHz<br />Secondary/Tertiary:
+              2GHz
+            </td>
+          </tr>
+        </table>
+
+        <h2>Memory & Storage</h2>
+        <table>
+          <tr>
+            <th>RAM</th>
+            <td>6 GB</td>
+          </tr>
+          <tr>
+            <th>Internal Storage</th>
+            <td>128 GB</td>
+          </tr>
+          <tr>
+            <th>Expandable Storage</th>
+            <td>Up to 2 TB (Hybrid Slot)</td>
+          </tr>
+          <tr>
+            <th>Memory Card Type</th>
+            <td>MicroSD</td>
+          </tr>
+        </table>
+
+        <h2>Camera</h2>
+        <table>
+          <tr>
+            <th>Primary Camera</th>
+            <td>50MP (IMX882) + 2MP (SC202CS)</td>
+          </tr>
+          <tr>
+            <th>Camera Features</th>
+            <td>
+              Night Mode, Live Photo, Portrait, HDR Video, Action Mode,
+              Timelapse, etc.
+            </td>
+          </tr>
+          <tr>
+            <th>Secondary Camera</th>
+            <td>16MP (GC16B3C)</td>
+          </tr>
+          <tr>
+            <th>Front Camera Features</th>
+            <td>Night Mode, Portrait, HDR Video, Timelapse, Beauty Mode</td>
+          </tr>
+          <tr>
+            <th>Video Recording</th>
+            <td>
+              Rear: 4K@30fps, 1080p@30/60/120fps<br />Front: 1080p@30/60fps
+            </td>
+          </tr>
+          <tr>
+            <th>Zoom</th>
+            <td>Digital Zoom up to 10X</td>
+          </tr>
+        </table>
+
+        <h2>Connectivity</h2>
+        <table>
+          <tr>
+            <th>Network</th>
+            <td>2G, 3G, 4G LTE, 5G</td>
+          </tr>
+          <tr>
+            <th>Wi-Fi</th>
+            <td>WiFi 6</td>
+          </tr>
+          <tr>
+            <th>Bluetooth</th>
+            <td>v5.3</td>
+          </tr>
+          <tr>
+            <th>USB</th>
+            <td>Type-C</td>
+          </tr>
+          <tr>
+            <th>Audio Jack</th>
+            <td>No</td>
+          </tr>
+          <tr>
+            <th>GPS</th>
+            <td>GPS (L1), GLONASS, BEIDOU, GALILEO, QZSS</td>
+          </tr>
+        </table>
+
+        <h2>Battery</h2>
+        <table>
+          <tr>
+            <th>Capacity</th>
+            <td>5000 mAh</td>
+          </tr>
+          <tr>
+            <th>Type</th>
+            <td>Lithium-ion (Non-removable)</td>
+          </tr>
+        </table>
+
+        <h2>Other Features</h2>
+        <table>
+          <tr>
+            <th>Weight</th>
+            <td>197 g</td>
+          </tr>
+          <tr>
+            <th>Dimensions</th>
+            <td>163.6 x 77.5 x 8.2 mm</td>
+          </tr>
+          <tr>
+            <th>Sensors</th>
+            <td>
+              In-display Fingerprint, Accelerometer, Gyro, E-Compass, Ambient
+              Light, Proximity
+            </td>
+          </tr>
+          <tr>
+            <th>Software Updates</th>
+            <td>2 Years Android Updates, 3 Years Security Updates</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="contact" class="container py-5">
+  <div class="row align-items-center">
+    
+    <!-- Image Section -->
+    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+      <img src="/assets/contact.webp" class="img-fluid rounded-5 w-75" alt="Contact Image">
+    </div>
+
+    <!-- Form Section -->
+    <div class="col-lg-6">
+     
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Mobile Number</label>
+          <input type="tel" class="form-control" placeholder="Enter your mobile number">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="mb-4">
+          <label class="form-label">Company / Institution Name</label>
+          <input type="text" class="form-control" placeholder="Enter your organization name">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success w-75">Submit Form</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+</div>
+ 
+       
+    </div>
+
+    <footer class="bg-black d-flex align-items-center text-center justify-content-center text-light mt-5 vh-10 p-3">
+      <p class="d-flex">Buildmyweb Final Task</p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
